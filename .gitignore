@@ -1,0 +1,50 @@
+```
+# Compiled and build artifacts
+*.class
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+target/
+build/
+
+# Dependencies
+.mypy_cache/
+.pytest_cache/
+.coverage
+node_modules/
+venv/
+.venv/
+__pycache__/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+
+# Gradle
+.gradle/
+
+# Maven (since this appears to be a Java project with pom.xml)
+target/
+```
