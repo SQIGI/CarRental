@@ -1,0 +1,20 @@
+-- Insert roles
+INSERT INTO users (username, password, role, email, phone, driver_license) VALUES ('admin', '$2a$10$92IXUNpkjO0rOQ5byNhpmXrC3GycuS1d1Zo6tqU5iAcfbVJcJFzqz', 'ADMIN', 'admin@carrental.com', '1234567890', 'DL123456');
+INSERT INTO users (username, password, role, email, phone, driver_license) VALUES ('client', '$2a$10$92IXUNpkjO0rOQ5byNhpmXrC3GycuS1d1Zo6tqU5iAcfbVJcJFzqz', 'CLIENT', 'client@carrental.com', '0987654321', 'DL789012');
+
+-- Insert categories
+INSERT INTO categories (name, description) VALUES ('Economy', 'Compact and fuel-efficient cars for city driving.');
+INSERT INTO categories (name, description) VALUES ('SUV', 'Spacious vehicles with high ground clearance and off-road capability.');
+INSERT INTO categories (name, description) VALUES ('Luxury', 'High-end models with premium features and comfort.');
+
+-- Insert cars
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Toyota', 'Corolla', 2023, 'ABC123', 60, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Comfortable sedan with low fuel consumption, ideal for city driving. Includes climate control, Bluetooth.', 1);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('BMW', 'X3', 2022, 'XYZ789', 150, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Premium SUV with advanced safety features and powerful engine.', 2);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Tesla', 'Model 3', 2024, 'TSL456', 200, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Electric car with long range and autopilot capabilities.', 3);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Ford', 'Focus', 2021, 'FDR100', 55, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Reliable compact car with modern tech and excellent handling.', 1);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Mercedes', 'GLC', 2023, 'MER200', 180, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Luxurious mid-size SUV with top-tier comfort and performance.', 3);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Hyundai', 'Santa Fe', 2022, 'HND300', 130, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Family-friendly SUV with spacious interior and good fuel economy.', 2);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Audi', 'A4', 2023, 'AUD400', 170, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Sporty luxury sedan with sleek design and premium build quality.', 3);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Honda', 'CR-V', 2021, 'HON500', 120, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Popular compact SUV with great reliability and cargo space.', 2);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Volkswagen', 'Golf', 2020, 'VW600', 50, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Classic hatchback known for durability and efficient engine.', 1);
+INSERT INTO cars (brand, model, year, license_plate, price_per_day, status, photo_url, description, category_id) VALUES ('Lexus', 'RX', 2023, 'LEX700', 220, 'AVAILABLE', 'https://images.unsplash.com/photo-1583125408450-0e1d7f2e3953?w=400&h=300&fit=crop', 'Luxury SUV offering smooth ride and quiet cabin.', 3);
